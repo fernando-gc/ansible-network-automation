@@ -1,0 +1,15 @@
+---
+- name: Run cisco commands
+  hosts: cisco
+
+  tasks:
+
+    - name: Obtener informacion de configuracion
+      ios_command:
+        commands:
+          - show version | include IOS
+          - show ip interface brief
+          - show running-config
+      register: output
+
+    - debug: var=output.stdout_lines
