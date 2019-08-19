@@ -1,0 +1,14 @@
+---
+- name: Run cisco commands
+  hosts: cisco
+
+  tasks:
+
+    - name: Editar el nombre de router
+      ios_command:
+        commands:
+          - configure terminal
+          - hostname router-changed
+      register: output
+
+    - debug: var=output.stdout_lines
