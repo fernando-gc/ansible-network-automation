@@ -1,14 +1,18 @@
 # This is the default ansible 'hosts' file.
-#
+
 [cisco]
 SWITCH_CORE ansible_host=10.10.10.254
 SWITCH_BCK ansible_host=10.10.10.253
 
 [cisco:vars]
- ansible_connection=network_cli
- ansible_become=yes
- ansible_become_method=enable
- ansible_become_password=cisco
- ansible_network_os=ios
- ansible_user=admin
- ansible_password=cisco
+ansible_user=admin
+ansible_password=cisco
+ansible_become_password=cisco
+
+ansible_become=yes
+ansible_become_method=enable
+
+ansible_connection=network_cli
+ansible_network_os=ios
+ 
+ 
