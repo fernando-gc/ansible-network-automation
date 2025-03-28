@@ -8,5 +8,5 @@ ansible-pylibssh
 ## Commands:
 ```
 ansible cisco -i hosts -m ping
-ansible-playbook playbook.yml
+ansible-playbook -i hosts playbook.yml
 ```
