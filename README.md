@@ -5,7 +5,8 @@ ansible-pylibssh
 
 ### Example for cisco devices
 
-## Command:
+## Commands:
 ```
+ansible cisco -i hosts -m ping
 ansible-playbook playbook.yml
 ```
