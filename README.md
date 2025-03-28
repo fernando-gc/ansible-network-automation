@@ -1,9 +1,9 @@
-## REQUERIMENTS
+# REQUERIMENTS
 
-#Installed:
+## Installed:
 ansible-pylibssh 
 
-#Example for cisco devices
+### Example for cisco devices
 
-# Command:
+## Command:
 ansible-playbook playbook.yml
